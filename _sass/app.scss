@@ -1,0 +1,41 @@
+@import "bootstrap.min.css";
+@import "compass";
+
+h1,
+.jumbotron h1 {
+  color: #2e3192;
+}
+
+.jumbotron {
+  background: lighten(#2e3192, 60);
+}
+
+header h1 {
+  margin-bottom: 20px;
+}
+
+.logo {
+  @include hide-text;
+
+  display: block;
+
+  width: 740px;
+  height: 130px;
+
+  background: url(/assets/images/logo-horizontal.png) 0 0 no-repeat;
+}
+
+#main {
+  padding: 0 0 50px 0;
+}
+
+#map {
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+footer {
+  padding: 20px 0 0 0;
+
+  background: #f8f8f8;
+}

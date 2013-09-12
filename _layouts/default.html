@@ -3,18 +3,65 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} - West Shore Physiotherapy</title>
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/stylesheets/app.css">
   </head>
   <body>
 
     <div class="container">
       <header>
-        <h1 class="title">{{ site.name }}</h1>
+        <h1><a href="/" class="logo">{{ site.name }}</a></h1>
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/what-to-expect">What to Expect</a></li>
+              <li><a href="/physiotherapy">Physiotherapy</a></li>
+              <li><a href="/rates">Rates</a></li>
+              <li><a href="/types-of-patients">Types of Patients</a></li>
+              <li><a href="/in-the-community">In the Community</a></li>
+              <li><a href="/resources">Resources</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
       </header>
-      {{ content }}
+      <section id="main">
+        {{ content }}
+      </section>
     </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <address>
+              <strong>Location</strong><br />
+              1070 Innisfil Beach Rd.<br />
+              Suite 6, Crossroad's Plaza<br />
+              Innisfil, ON<br />
+              L9S 4T9
+            </address>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact">
+              <strong>Contact Info</strong><br />
+              Phone: 705.294.1915<br />
+              Fax: 1.866.325.4892<br />
+              Email: info@westshorephysio.ca
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

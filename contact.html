@@ -1,0 +1,72 @@
+---
+layout: default
+title: Contact Us
+permalink: /contact/index.html
+---
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+<script>
+(function() {
+  var map,
+      geocoder;
+
+  function codeAddress(address) {
+    geocoder = new google.maps.Geocoder();
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        var myOptions = {
+          zoom: 16,
+          center: results[0].geometry.location,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        map = new google.maps.Map(document.getElementById("map"), myOptions);
+
+        var marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location
+        });
+      }
+    });
+  }
+
+  function initialize() {
+    codeAddress('1070 Innisfil Beach Road, Innisfil, ON, L9S 4T9');
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+})();
+</script>
+
+<div class="row">
+  <div class="col-lg-4">
+
+    <h3>Hours of Operation</h3>
+    <ul>
+      <li>Tuesday – 7:00 AM – 7:00 PM</li>
+      <li>Wednesday – 7:00 AM – 7:00 PM</li>
+      <li>Thursday – 7:00 AM – 7:00 PM</li>
+      <li>Friday – 7:00 AM – 7:00 PM</li>
+      <li>Saturday – By Appointment</li>
+      <li>Sunday – Closed</li>
+    </ul>
+
+  </div>
+  <div class="col-lg-4">
+
+    <h3>Contact Us</h3>
+    <ul>
+      <li><strong>Phone</strong> 707.291.1915</li>
+      <li><strong>Fax</strong> 1.866.325.4892</li>
+      <li><strong>E-mail</strong> info@westshorephysio.ca</li>
+    </ul>
+  
+  </div>
+  <div class="col-lg-4">
+    <h3>Address</h3>
+    <address>
+      1070 Innisfil Beach Road, Suite 6,<br />
+      Crossroads Plaza,<br />
+      Innisfil, ON, L9S 4T9
+    </address>
+  </div>
+</div>
