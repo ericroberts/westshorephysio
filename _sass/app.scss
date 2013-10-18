@@ -22,7 +22,7 @@ header h1 {
   width: 740px;
   height: 130px;
 
-  background: url(/assets/images/logo-horizontal.png) 0 0 no-repeat;
+  background: url({{ site.baseurl }}/assets/images/logo-horizontal.png) 0 0 no-repeat;
 }
 
 #main {
