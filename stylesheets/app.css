@@ -9,7 +9,7 @@ h1, .jumbotron h1 { color: #2e3192; }
 header h1 { margin-bottom: 20px; }
 
 /* line 17, ../_sass/app.scss */
-.logo { text-indent: -119988px; overflow: hidden; text-align: left; display: block; width: 740px; height: 130px; background: url(/assets/images/logo-horizontal.png) 0 0 no-repeat; }
+.logo { text-indent: -119988px; overflow: hidden; text-align: left; display: block; width: 740px; height: 130px; background: url(../assets/images/logo-horizontal.png) 0 0 no-repeat; }
 
 /* line 28, ../_sass/app.scss */
 #main { padding: 0 0 50px 0; }
