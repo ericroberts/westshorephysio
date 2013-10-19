@@ -1,7 +1,7 @@
 name: West Shore Physiotherapy
 markdown: redcarpet
 pygments: true
-baseurl: http://ericroberts.github.io/westshorephysio
+baseurl: http://www.westshorephysio.ca
 exclude:
  - unicorn.rb
  - README.md
