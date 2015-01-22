@@ -7,8 +7,8 @@ permalink: /rates/index.html
 # Rates
 
 ### The below rates relate to private treatments:
-- Initial Physiotherapy Assessment - $70.00
-- Physiotherapy Treatment - $45.00
+- Initial Physiotherapy Assessment - $75.00
+- Physiotherapy Treatment - $50.00
 
 A Physiotherapy treatment may include the use of varying modalities including acupuncture.
 
